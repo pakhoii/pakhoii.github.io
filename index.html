@@ -2,9 +2,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.svg">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/include.js"></script>
+    <title>Home</title>
 </head>
 <body>
-    <h1>PHAM ANH KHOI</h1>
+    <div id="nav"></div>
+
+    <header class="banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1 class="banner-title">Pham Anh Khoi</h1>
+                <p class="banner-subtitle">A very handsome IT guy. Deserve to have 10 girlfriends</p>
+                <div class="banner-cta">
+                    <button class="btn btn-primary"><a href="projects.html">View My Work</a></button>
+                    <button class="btn btn-secondary"><a href="contact.html">Contact Me</a></button>
+                </div>
+            </div>
+
+            <div class="banner-image">
+                <img src="/assets/images/khoideptrai.jpeg" alt="Handsome boy" height="400">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="feature-projects">
+            <div class="container">
+                <h2>Featured Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                         <div class="project-image">
+                            <img src="/assets/images/skyline.png" alt="E-commerce Platform">
+                         </div>
+                        <div class="project-info">
+                            <h3>Skyline Serenade</h3>
+                            <p>Streamline operations, enhance passenger experience, and manage airport data efficiently.</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="/assets/images/movie.png" alt="E-commerce Platform">
+                         </div>
+                        <div class="project-info">
+                            <h3>Watch Together and Recommendation System</h3>
+                            <p>Enjoy movies together</p>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image">
+                            <img src="/assets/images/aems.png" alt="E-commerce Platform">
+                         </div>
+                        <div class="project-info">
+                            <h3>Management System</h3>
+                            <p>Manage attendance, payroll, performance evaluations, and reporting with improved accuracy.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="view-all">
+                    <button class="btn-primary">
+                        <a href="projects.html" class="btn btn-outline">View All Projects</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-preview">
+            <div class="container">
+                <h2>My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <h3>Frontend</h3>
+                        <p>React, TypeScript, Tailwind CSS</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Backend</h3>
+                        <p>Node.js, Python, PostgreSQL</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Design</h3>
+                        <p>Figma, UI/UX, Prototyping, Wireframing</p>
+                    </div>
+                    <div class="skill-item">
+                        <h3>Tools</h3>
+                        <p>Git, Docker</p>
+                    </div>
+                </div>
+                <div class="view-all">
+                    <button class="btn-secondary">
+                        <a href="skills.html">View Detailed Skills</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <h2>Wanna Hang out with Me?</h2>
+                <p>You need to book for it. Follow the link bellow to get a chance</p>
+                <button class="btn-primary">
+                    <a href="contact.html">Contact Me</a>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <div id="foot"></div>
+
+    <script>
+        loadTemplate("#nav", "/components/navbar.html", "navbar-template")
+        loadTemplate("#foot", "/components/footer.html", "footer-template")
+    </script>
 </body>
 </html>

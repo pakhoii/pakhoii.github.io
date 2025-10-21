@@ -1,0 +1,98 @@
+/* ============================================
+   DESIGN TOKENS & VARIABLES – Ocean Blue Serenity
+   ============================================ */
+:root {
+  --color-primary: #023E8A;      /* Main brand color – strong ocean blue */
+  --color-secondary: #0077B6;    /* Secondary tone – lighter blue for sections/cards */
+  --color-accent: #0096C7;       /* Accent – used for hover, buttons, highlights */
+  --color-highlight: #00B4D8;    /* Bright cyan – call-to-action or key buttons */
+  --color-light: #CAF0F8;        /* Very light background (almost white-blue) */
+  --color-dark: #03045E;         /* Deep navy – header/footer backgrounds */
+
+  --color-text: #0A0A0A;         /* Default text color for readability on light bg */
+  --color-text-light: #4B5563;   /* Subtle gray-blue text for secondary info */
+  --color-border: #90E0EF;       /* Soft cyan border tone */
+  
+  --color-success: #10B981;      /* ✅ Success (keep same for consistency) */
+  --color-error: #EF4444;        /* ❌ Error (keep same for readability) */
+  --color-warning: #F59E0B;      /* ⚠️ Warning (keep same for contrast) */
+
+  /*=========================
+    Spacing Scale
+    ========================= */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+
+  /*=========================
+    Typography
+    ========================= */
+  --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family-mono: "Courier New", monospace;
+
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.5rem;
+  --font-size-2xl: 2rem;
+  --font-size-3xl: 2.5rem;
+  --font-size-4xl: 3rem;
+
+  /*=========================
+    Border Radius
+    ========================= */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /*=========================
+    Shadows
+    ========================= */
+  --shadow-sm: 0 1px 2px 0 rgba(3, 4, 94, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(2, 62, 138, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 118, 182, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 150, 199, 0.1);
+
+  /*=========================
+    Transitions
+    ========================= */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 300ms ease-in-out;
+  --transition-slow: 500ms ease-in-out;
+}
+
+/* =========================
+    Dark Mode
+   ========================= */
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #03045E;
+    --color-secondary: #023E8A;
+    --color-accent: #0077B6;
+    --color-highlight: #48CAE4;
+    --color-light: #0A192F;
+    --color-dark: #000814;
+
+    --color-text: #F5F5F5;
+    --color-text-light: #A5B4FC;
+    --color-border: #1E293B;
+  }
+} */
+
+/* Manual toggle (if user clicks dark-mode switch) */
+/* body.dark-mode {
+  --color-primary: #03045E;
+  --color-secondary: #023E8A;
+  --color-accent: #0077B6;
+  --color-highlight: #48CAE4;
+  --color-light: #0A192F;
+  --color-dark: #000814;
+
+  --color-text: #F5F5F5;
+  --color-text-light: #A5B4FC;
+  --color-border: #1E293B;
+} */
