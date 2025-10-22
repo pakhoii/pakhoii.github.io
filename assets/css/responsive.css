@@ -25,6 +25,12 @@
   .banner-image {
     margin-top: var(--spacing-lg);
   }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 768px) {
@@ -51,5 +57,14 @@
 
   .menu-toggle {
     display: flex;
+  }
+}
+
+@media (max-width: 580px) {
+  .education-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }

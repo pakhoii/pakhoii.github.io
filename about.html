@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.svg">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/include.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <title>About</title>
+</head>
+<body>
+    <div id="nav"></div>
+    <div class="buffer"></div>
+    
+    <main class="about-page">
+        <div class="container">
+            <section class="about-hero">
+                <h1>About Me</h1>
+                <p class="lead">I'm a passionate computer science student with a strong interest in Artificial Intelligence, Machine Learning, and Deep Learning. I love exploring the mathematics behind intelligent systems — from calculus and linear algebra to probability and statistics — and finding ways to turn theory into real-world applications. Beyond the technical side, I'm also a developer and designer who enjoys crafting clean, modern, and functional digital experiences. Whether I'm coding a backend API, designing a web interface with Tailwind, or experimenting with interactive UI effects, I always aim to blend creativity with precision. I believe great technology comes from curiosity, strong fundamentals, and a touch of aesthetic sense — and that’s exactly what I strive to bring into everything I build.</p>
+            </section>
+
+            <section class="about-content">
+                <div class="about-text">
+                    <h2>Who I Am</h2>
+                    <p>
+                        With over a year of professional experience in web development and digital design, I have had the privilege of collaborating with startups, creative agencies, and enterprise teams to deliver high-quality, user-centered web solutions. My work spans the full development lifecycle — from conceptual design and frontend implementation to backend integration and deployment — ensuring every product I build is both technically sound and visually refined. My journey into technology began with a deep curiosity about how things work on the web. What started as an exploration of HTML and CSS gradually evolved into a profound passion for building elegant, efficient, and meaningful digital experiences. Over time, I have developed a strong foundation in modern web technologies, including responsive design principles, performance optimization, and scalable architecture. Beyond development, I am driven by a belief that great digital experiences are born from the perfect balance between design and engineering. I approach every project with a focus on clarity, usability, and long-term maintainability — ensuring that code remains clean, modular, and adaptable as technologies evolve.
+                    </p>
+                    <p>
+                         I am also deeply passionate about artificial intelligence and machine learning, fields that continue to inspire my curiosity and shape the way I think about technology. My academic background in computer science, combined with my growing expertise in mathematics and algorithmic thinking, allows me to approach problems with both analytical rigor and creative insight. Ultimately, I see web development not just as a profession, but as a craft — one that blends logic, aesthetics, and human-centered design. Every project I undertake is an opportunity to learn, innovate, and push the boundaries of what is possible on the web.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <img src="/assets/images/khoi12.jpeg" alt="Profile picture" width="250">
+                </div>
+            </section>
+
+            <section class="education">
+                <h2>Education</h2>
+                <div class="education-list">
+                    <article class="education-item">
+                        <div class="education-header">
+                            <div>
+                                <h3>Bachelor in Computer Science</h3>
+                            </div>
+                            <div>
+                                <span class="year">2023 - Present</span>
+                            </div>
+                        </div>
+                        <p class="institution">International University - Vietnam National University HCMC</p>
+                        <p>Interested in Machine Learning, Deep Learning, Software Developemnt</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="foot"></div>
+
+    <script>
+        loadTemplate("#nav", "/components/navbar.html", "navbar-template").then(
+            () => {
+                initializeDarkMode();
+            }
+        )
+        loadTemplate("#foot", "/components/footer.html", "footer-template")
+    </script>
+</body>
+</html>

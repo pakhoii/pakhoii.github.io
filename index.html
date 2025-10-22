@@ -5,10 +5,12 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/logo.svg">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="./assets/js/include.js"></script>
+    <script src="/assets/js/script.js"></script>
     <title>Home</title>
 </head>
 <body>
     <div id="nav"></div>
+    <div class="buffer"></div>
 
     <header class="banner">
         <div class="container">
@@ -113,7 +115,12 @@
     <div id="foot"></div>
 
     <script>
-        loadTemplate("#nav", "/components/navbar.html", "navbar-template")
+        loadTemplate("#nav", "/components/navbar.html", "navbar-template").then(
+            () => {
+                initializeDarkMode()
+                activeMenuToggle()
+            }
+        )
         loadTemplate("#foot", "/components/footer.html", "footer-template")
     </script>
 </body>
