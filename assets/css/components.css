@@ -44,7 +44,14 @@ body.dark-mode .theme-toggle:hover {
   align-items: center;
 }
 
-.nav-menu {
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--spacing-lg);
+}
+
+.nav-menu-link {
   display: flex;
   gap: var(--spacing-lg);
   list-style: none;

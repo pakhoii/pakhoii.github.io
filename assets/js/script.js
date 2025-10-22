@@ -25,3 +25,22 @@ function initializeDarkMode() {
         });
     }
 }
+
+function activeMenuToggle() {
+    // Get menu toggle and nav menu (link to other pages) from html
+    const menuToggle = document.querySelector(".menu-toggle")
+    const navMenu = document.querySelector(".nav-menu")
+    
+    if (menuToggle) {
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active")
+        })
+
+        // Close menu when a link is clicked
+        document.querySelectorAll(".nav-menu a").forEach((link) => {
+            link.addEventListener("click", () => {
+            navMenu.classList.remove("active")
+            })
+        })
+    }
+}

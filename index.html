@@ -11,7 +11,7 @@
 <body>
     <div id="nav"></div>
     <div class="buffer"></div>
-    
+
     <header class="banner">
         <div class="container">
             <div class="banner-content">
@@ -117,7 +117,8 @@
     <script>
         loadTemplate("#nav", "/components/navbar.html", "navbar-template").then(
             () => {
-                initializeDarkMode();
+                initializeDarkMode()
+                activeMenuToggle()
             }
         )
         loadTemplate("#foot", "/components/footer.html", "footer-template")
