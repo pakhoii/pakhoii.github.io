@@ -68,31 +68,13 @@
 /* =========================
     Dark Mode
    ========================= */
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --color-primary: #03045E;
-    --color-secondary: #023E8A;
-    --color-accent: #0077B6;
-    --color-highlight: #48CAE4;
-    --color-light: #0A192F;
-    --color-dark: #000814;
-
-    --color-text: #F5F5F5;
-    --color-text-light: #A5B4FC;
-    --color-border: #1E293B;
-  }
-} */
-
-/* Manual toggle (if user clicks dark-mode switch) */
-/* body.dark-mode {
-  --color-primary: #03045E;
-  --color-secondary: #023E8A;
-  --color-accent: #0077B6;
-  --color-highlight: #48CAE4;
-  --color-light: #0A192F;
-  --color-dark: #000814;
-
-  --color-text: #F5F5F5;
-  --color-text-light: #A5B4FC;
-  --color-border: #1E293B;
-} */
+body.dark-mode {
+  --color-primary: #0A192F; 
+  --color-secondary: #172A46; 
+  --color-accent: #16b18d; /* Một màu xanh da trời sáng */
+  --color-highlight: #14d0a4; /* Màu xanh bạc hà công nghệ, tương phản cao */
+  --color-light: #303C55; 
+  --color-text: #CCD6F6; 
+  --color-text-light: #8892B0; 
+  --color-border: #303C55;
+}
