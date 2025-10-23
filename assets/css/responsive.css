@@ -72,6 +72,9 @@
     height: 250px;
   }
 
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 580px) {

@@ -5,17 +5,127 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/logo.svg">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="./assets/js/include.js"></script>
-    <script src="/assets/js/script.js"></script>
     <title>Contact</title>
 </head>
 <body>
     <div id="nav"></div>
     <div class="buffer"></div>
 
-    
+    <main class="contact-page">
+        <div class="container">
+            <section class="page-header">
+                <h1>Get In Touch</h1>
+                <p>Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
+            </section>
+
+            <div class="contact-wrapper">
+                <!-- Contact Form -->
+                <section class="contact-form-section">
+                    <h2>Send Me a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required aria-label="Full Name">
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required aria-label="Email Address">
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" aria-label="Phone Number">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required aria-label="Subject">
+                            <span class="error-message" id="subjectError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="projectType">Project Type</label>
+                            <select id="projectType" name="projectType" aria-label="Project Type">
+                                <option value="">Select a project type</option>
+                                <option value="web">Web Development</option>
+                                <option value="mobile">Mobile App</option>
+                                <option value="design">Design</option>
+                                <option value="consulting">Consulting</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Budget Range</label>
+                            <select id="budget" name="budget" aria-label="Budget Range">
+                                <option value="">Select a budget range</option>
+                                <option value="5k">$5,000 - $10,000</option>
+                                <option value="10k">$10,000 - $25,000</option>
+                                <option value="25k">$25,000 - $50,000</option>
+                                <option value="50k">$50,000+</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required aria-label="Message"></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <div class="form-group checkbox">
+                            <input type="checkbox" id="terms" name="terms" required aria-label="Agree to terms">
+                            <label for="terms">I agree to the terms and conditions *</label>
+                            <span class="error-message" id="termsError"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </section>
+
+                <!-- Contact Information -->
+                <section class="contact-info-section">
+                    <h2>Contact Information</h2>
+                    
+                    <div class="contact-info-item">
+                        <h3>Email</h3>
+                        <p><a href="mailto:hello@example.com">hello@example.com</a></p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h3>Phone</h3>
+                        <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h3>Location</h3>
+                        <p>San Francisco, CA<br>United States</p>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h3>Social Media</h3>
+                        <div class="social-links">
+                            <a href="https://github.com/pakhoii" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://www.facebook.com/p.anhkhoi.1/" target="_blank" rel="noopener noreferrer">Facebook</a>
+                            <a href="https://www.instagram.com/pa.khoiii/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item">
+                        <h3>Availability</h3>
+                        <p>I'm available for freelance projects and full-time opportunities. Response time: 24-48 hours.</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
 
     <div id="foot"></div>
 
+    <script src="/assets/js/script.js"></script>
     <script>
         loadTemplate("#nav", "/components/navbar.html", "navbar-template").then(
             () => {
