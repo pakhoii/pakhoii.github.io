@@ -59,7 +59,8 @@
     <script>
         loadTemplate("#nav", "/components/navbar.html", "navbar-template").then(
             () => {
-                initializeDarkMode();
+                initializeDarkMode()
+                activeMenuToggle()
             }
         )
         loadTemplate("#foot", "/components/footer.html", "footer-template")
