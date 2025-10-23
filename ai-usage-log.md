@@ -82,3 +82,5 @@ body.dark-mode {
   --color-light: #1a1a1a;
 }
 ```
+
+> How to simulate the components like in React

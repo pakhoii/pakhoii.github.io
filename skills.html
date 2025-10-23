@@ -1,0 +1,155 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.svg">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="./assets/js/include.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <title>Skills</title>
+</head>
+<body>
+    <div id="nav"></div>
+    <div class="buffer"></div>
+
+    <main class="skills-page">
+        <div class="container">
+            <section class="skills-section">
+                <h2>Frontend Development</h2>
+                <div class="skills-list">
+                    <div class="skill-bar">
+                        <div class="skill-header">
+                            <h3>React</h3>
+                            <span class="skill-level">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-header">
+                            <h3>TypeScript</h3>
+                            <span class="skill-level">50%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 50%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-header">
+                            <h3>HTML & CSS</h3>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-header">
+                            <h3>Tailwind CSS</h3>
+                            <span class="skill-level">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Backend Skills -->
+            <section class="skills-section">
+                <h2>Backend Development</h2>
+                <div class="skills-list">
+                    <div class="skill-bar">
+                        <div class="skill-header">
+                            <h3>Node.js</h3>
+                            <span class="skill-level">68%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 68%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-header">
+                            <h3>Python</h3>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar">
+                        <div class="skill-header">
+                            <h3>PostgreSQL & MySQL</h3>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tech-stack">
+                <h2>Tech Stack</h2>
+                <div class="stack-categories">
+                    <div class="stack-category">
+                        <h3>Languages</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                        </div>
+                    </div>
+
+                    <div class="stack-category">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Next.js</span>
+                        </div>
+                    </div>
+
+                    <div class="stack-category">
+                        <h3>Databases</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+
+                    <div class="stack-category">
+                        <h3>Tools & Platforms</h3>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Docker</span>
+                            <span class="tech-tag">Figma</span>
+                            <span class="tech-tag">VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+
+    <div id="foot"></div>
+
+    <script>
+        loadTemplate("#nav", "/components/navbar.html", "navbar-template").then(
+            () => {
+                initializeDarkMode()
+                activeMenuToggle()
+            }
+        )
+        loadTemplate("#foot", "/components/footer.html", "footer-template")
+    </script>
+</body>
+</html>
