@@ -660,3 +660,26 @@ body.dark-mode .project-card-full {
   border-radius: var(--radius-md);
   font-size: var(--font-size-sm);
 }
+
+/* Policy */
+.policy-page {
+  padding: var(--spacing-2xl);
+}
+
+.page-header {
+  text-align: center;
+}
+
+.policy-content {
+  margin-top: var(--spacing-2xl);
+}
+
+.policy-content h2 {
+  color: var(--color-highlight);
+  border-bottom: solid #e1e1e1;
+  padding-bottom: var(--spacing-sm);
+}
+
+.policy-content h3 {
+  color: var(--color-primary);
+}
