@@ -1,54 +1,48 @@
 # pakhoii.github.io
-Pakhoii's CV
+This is the first version of my personal CV.
 
 ## Project Structure 
+Here is the project structure of my porfolio website.
 ```
-portfolio/
+pakhoii.github.io/
 │
-├── index.html                # 🏠 Home page — introduction + hero section + quick nav
-├── about.html                # 👤 About me — profile, education, timeline
-├── skills.html               # ⚙️ Skills — tech stacks, progress bars, maybe JS animation
-├── projects.html             # 💻 Project list with images, hover effect, details link
-├── project-1.html            # 📝 Sample detailed project page (optional)
-├── gallery.html              # 🖼️ Photo/video showcase, includes <figure> and <figcaption>
-├── blog.html                 # 📰 Blog listing page
-├── post-1.html               # 🗒️ Example blog post page (semantic article)
-├── contact.html              # 📩 Full form (all input types + validation)
-├── map.html                  # 🗺️ Embedded Google Maps iframe + location info
-├── policy.html               # 📜 Privacy/terms page (for completeness)
+├── .github/                         # GitHub-specific folder (workflows, templates, etc.)
 │
-├── assets/
-│   ├── css/
-│   │   ├── styles.css        # Main stylesheet (import variables, layout, components)
-│   │   ├── variables.css     # Color palette, typography system
-│   │   ├── layout.css        # Flexbox/Grid layout utilities
-│   │   ├── components.css    # Buttons, cards, nav, footer, etc.
-│   │   └── responsive.css    # Media queries (min-width: 768px, 1200px)
+├── assets/                          # Contains all static assets like CSS, JS, and images
+│   ├── css/                         # Folder for all CSS styling files
+│   │   ├── components.css           # Styles for specific components (e.g., navbar, footer)
+│   │   ├── global.css               # Global styles applied to the entire website
+│   │   ├── responsive.css           # Styles for responsive design (mobile, tablet, etc.)
+│   │   ├── styles.css               # Main CSS file that may import other CSS files
+│   │   └── variables.css            # CSS variables (colors, fonts, spacing)
 │   │
-│   ├── js/
-│   │   ├── main.js           # Navbar, smooth scroll, small DOM scripts
-│   │   ├── form-validate.js  # Contact form validation + error messages
-│   │   └── theme-toggle.js   # Bonus: dark/light mode logic
+│   ├── images/                      # Folder for all images used in the site
 │   │
-│   ├── img/
-│   │   ├── profile.webp
-│   │   ├── projects/
-│   │   │   ├── project1.webp
-│   │   │   ├── project2.webp
-│   │   ├── gallery/
-│   │   │   ├── photo1.webp
-│   │   │   └── photo2.webp
-│   │   └── icons/
-│   │       ├── favicon.ico
-│   │       └── social-logos/
-│   │
-│   ├── fonts/                # Custom fonts (Google Fonts or local)
-│   └── media/
-│       └── intro-video.mp4   # Optional hero background or YouTube embed
+│   └── js/                          # Folder for JavaScript files
+│       ├── include.js               # Handles including shared components like navbar/footer
+│       └── script.js                # Main JavaScript logic and interactions
 │
-├── favicon.ico
-├── README.md                 # 🧭 Site map, features, instructions, credits
-├── wireframe.pdf             # 📐 Sketch or design plan (for deliverables)
-├── testing-report.pdf        # 🧪 Test accessibility & validation results
-└── ai-usage-log.txt          # 🤖 Tools used + prompt examples
+├── components/                      # Contains HTML components or main website pages
+│   ├── footer.html                  # Footer component
+│   ├── navbar.html                  # Navigation bar component
+├── about.html                       # About page
+├── contact.html                     # Contact page
+├── gallery.html                     # Gallery page
+├── index.html                       # Main homepage
+├── policy.html                      # Privacy policy or site policy page
+├── projects.html                    # Projects or portfolio page
+└── skills.html                      # Skills or expertise page
+├── ai-usage-log.md                  # Log or notes about AI usage in the project
+├── LICENSE                          # License file (terms and permissions for using this code)
+└── README.md                        # Report
 ```
+---
+## Features
+This website consists of totally 7 pages, which are:
+- Home page (`index.html`): The main landing page of the website
+- About me page (`about.html`): Provides detailed information about me, my background, and my experience.
+- Skills page (`skills.html`): My technical skills and how proficient I am with these techniques.
+- Projects page (`projects.html`): Some of my group projects.
+- Gallery page (`gallery.html`): Gallery contains my images.
+- Contact page (`contact.html`): Contains contact information or a form for visitors to send messages.
+- Policy page (`policy.html`): Explains the website’s privacy policy, terms of use, or data handling details.
