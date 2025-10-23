@@ -44,3 +44,23 @@ function activeMenuToggle() {
         })
     }
 }
+
+function navigateToGithub() {
+    const projectCard = document.querySelector(".project-card")
+
+    if (projectCard) {
+        const name = projectCard.querySelector(".project-info h3").textContent
+
+        switch (name) {
+            case "Skyline Serenade":
+                window.location.href = "https://github.com/DrGnNatsu/Principles-of-Database-Management-IU"
+                break
+            case "Watch Together and Recommendation System":
+                window.location.href = "https://github.com/ngvuthtinh/Movie_Recommendation_System"
+                break
+            case "Management System":
+                window.location.href = "https://github.com/PhamAnhKhoi10/advanced-employee-management-system"
+                break
+        }
+    }
+}

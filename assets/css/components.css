@@ -23,11 +23,18 @@ body.dark-mode .navbar {
 }
 
 .theme-toggle {
-  background-color: transparent
+  background-color: transparent;
+  border: solid transparent;
+  width: 40;
+  height: 60;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .theme-toggle:hover {
-  background-color: #efefef
+  background-color: #efefef;
+  border: solid var(--color-highlight);
 }
 
 body.dark-mode .theme-toggle:hover {
@@ -64,6 +71,31 @@ body.dark-mode .theme-toggle:hover {
 
 .menu-toggle {
   display: none;
+  flex-direction: column;
+  background: none;
+  border: solid transparent;
+  cursor: pointer;
+  gap: 5px;
+  width: 40;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-toggle:hover {
+  background-color: #efefef;
+  border: solid var(--color-highlight);
+}
+
+body.dark-mode .menu-toggle:hover {
+  background-color: var(--color-primary)
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-text);
+  border-radius: var(--radius-sm);
+  transition: all var(--transition-fast);
 }
 
 img {
