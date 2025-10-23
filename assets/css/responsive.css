@@ -63,6 +63,15 @@
   .menu-toggle {
     display: flex;
   }
+
+  .project-card-full {
+    grid-template-columns: 1fr;
+  }
+
+  .project-image-full {
+    height: 250px;
+  }
+
 }
 
 @media (max-width: 580px) {
